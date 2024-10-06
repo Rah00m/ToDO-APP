@@ -1,0 +1,10 @@
+.User .UserImg{
+}
+.User .Box{
+    display: block;
+    height: 150px;
+    width: 150px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-left: 28px;
+}

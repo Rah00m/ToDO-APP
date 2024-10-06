@@ -1,0 +1,19 @@
+.Sidebar {
+    background-color: rgba(129, 11, 164, 0.648);
+    width: 300px;
+    min-width:200px;
+    /* margin-right: 0; */
+    border: none;
+}
+.Sidebar img {
+    width:30px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.Sidebar h2{
+    font-size: 20px;
+    color: aliceblue;
+    width: 150px;
+    float: right;
+    margin-top: 5px;
+}
