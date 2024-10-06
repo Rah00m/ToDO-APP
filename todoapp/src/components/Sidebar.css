@@ -4,16 +4,20 @@
     min-width:200px;
     /* margin-right: 0; */
     border: none;
+    position: relative;
 }
 .Sidebar img {
-    width:30px;
-    margin-left: 15px;
-    margin-top: 5px;
+    width:20px;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 5px;
 }
 .Sidebar h2{
-    font-size: 20px;
+    position: absolute;
+    font-size: 15px;
     color: aliceblue;
     width: 150px;
-    float: right;
+    left: 35px;
+    top:0;
     margin-top: 5px;
 }

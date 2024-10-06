@@ -1,4 +1,14 @@
-.User .UserImg{
+.User .Box span{
+    text-align: center;
+    top: 10px;
+    right: 5px;
+    padding: 20px;
+    position: absolute;
+}
+.User .UN  h2{
+    float: left;
+    font-size: 19px;
+    position: relative;
 }
 .User .Box{
     display: block;
@@ -7,4 +17,37 @@
     background-color: aliceblue;
     border-radius: 50%;
     margin-left: 28px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:150px;
+    
+}
+
+input {
+
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 120px;
+    font-size: 15px;
+    background-color: #3e0465;
+    color: rgb(238, 236, 236);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #07a028; /* Darker blue on hover */
 }

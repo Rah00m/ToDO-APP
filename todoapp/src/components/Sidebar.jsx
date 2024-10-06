@@ -10,7 +10,7 @@ function Sidebar() {
             <img src={logo}/>
             <h2>RomaVation</h2>
             <User />
-            
+            {/* <hr style={{ marginTop :"20px", width:"180px" ,marginLeft:"10px"}}></hr> */}
             
             {/* <AddNew /> */}
             {/* <Calendar /> */}
