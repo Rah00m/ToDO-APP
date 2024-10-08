@@ -46,9 +46,10 @@ const ImageUpload =(event) =>{
             onChange={ImageUpload}
             />
             </div>
+            {/* style={{ marginLeft: `calc((200px - ${name.length * 23 }px) /2)` }} // Assuming each character is around 8px wide */}
             {isSubmitted ? (
-                <div className='UN' style={{ marginLeft: `calc((200px - ${name.length * 23 }px) /2)` }} // Assuming each character is around 8px wide
-                >                <h2>{name}😍</h2>
+                <div className='UN'
+                >                <h2>Hello,{name}!</h2>
                 </div>
             ) : (
             <div className="info">
@@ -57,7 +58,8 @@ const ImageUpload =(event) =>{
                 onChange={(event)=>{setname(event.target.value)}}
                 />
                 <button className='btn' type='submit' onClick={handleSubmit} >Save</button>
-            </div>)}
+            </div>
+        )}
         </div>
     )
 }

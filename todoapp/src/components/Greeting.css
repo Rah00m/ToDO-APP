@@ -1,0 +1,52 @@
+.greetingBox{
+    height: 30%;
+    margin: 15px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin-bottom: 0;
+    box-shadow: 2px 2px 2px #141313d9 ;
+    position: relative;
+}
+.greetingBox .overlay{
+    background-color: rgba(0, 0, 0, 0.175);
+    z-index: 1;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.greetingBox .Date{
+    position: absolute;
+    color: #3e0465;
+    font-size: large;
+    font-weight: bold;
+    top: 125px;
+    left:50px;
+    z-index: 2;
+}
+@media(max-width:991px){
+    .greetingBox .Date{
+        top:40px;
+        font-size:15px;
+    }
+}
+@media(max-width:441px){
+    .greetingBox .Date{
+        top:50px;
+        font-size:10px;
+    }
+}
+@media(max-width:600px){
+    .greetingBox .Date{
+        top:40px;
+        font-size:15px;
+    }
+}
+@media(max-width:1200px){
+    .greetingBox .Date{
+        top:70px;
+        font-size:25px;
+    }
+}
+

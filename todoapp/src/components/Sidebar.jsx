@@ -1,14 +1,16 @@
 import User from "./User";
-import './Sidebar.css'
-import logo from "../IMG/logo.png"
+import './Sidebar.css';
+import logo from "../IMG/logo.png";
 // import AddNew from "./AddNew";
 // import Calendar from "./Calendar";
 
 function Sidebar() {
     return (
         <div className="Sidebar">
-            <img src={logo}/>
-            <h2>RomaVation</h2>
+            <div className="brand">
+                <img src={logo} alt="RomaVation Logo" /> {/* Added alt attribute for accessibility */}
+                <h2>RomaVation</h2>
+            </div>
             <User />
             {/* <hr style={{ marginTop :"20px", width:"180px" ,marginLeft:"10px"}}></hr> */}
             

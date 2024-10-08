@@ -1,23 +1,99 @@
 .Sidebar {
-    background-color: rgba(129, 11, 164, 0.648);
     width: 300px;
     min-width:200px;
     /* margin-right: 0; */
     border: none;
+    /* position: relative; */
+}
+.Sidebar.brand{
     position: relative;
 }
 .Sidebar img {
     width:20px;
     margin-left: 10px;
-    margin-top: 6px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 .Sidebar h2{
-    position: absolute;
-    font-size: 15px;
-    color: aliceblue;
+    /* position: absolute; */
+    font-size: 20px;
+    color: #3e0465;
     width: 150px;
     left: 35px;
     top:0;
     margin-top: 5px;
+    position: absolute;
 }
+@media(max-width:991px){
+    .Sidebar {
+        width: 250px;
+        min-width:190px;
+        border: none;
+    }
+    .Sidebar img {
+        width:10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .Sidebar h2{
+        /* position: absolute; */
+        font-size: 10px;
+        color: #3e0465;
+        width: 150px;
+        left: 25px;
+        top:2px;
+        margin-top: 5px;
+        position: absolute;
+    }
+}
+@media(max-width:441px){
+    .Sidebar {
+        width: 200px;
+        min-width:150px;
+        border: none;
+    }
+    .Sidebar img {
+        width:10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .Sidebar h2{
+        /* position: absolute; */
+        font-size: 10px;
+        color: #3e0465;
+        width: 150px;
+        left: 25px;
+        top:2px;
+        margin-top: 5px;
+        position: absolute;
+    }
+}
+@media(max-width:600px){
+    .Sidebar {
+        width: 200px;
+        min-width:120px;
+        border: none;
+    }
+    .Sidebar img {
+        width:10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .Sidebar h2{
+        /* position: absolute; */
+        font-size: 10px;
+        color: #3e0465;
+        width: 150px;
+        left: 25px;
+        top:2px;
+        margin-top: 5px;
+        position: absolute;
+    }
+}
+@media(max-width:1200px){
+
+}
+

@@ -1,10 +1,11 @@
-import Todos from "./Todos"
+// import Todos from "./Todos"
 import './Main.css'
-import EditToDo from "./EditToDo"
+import Greeting from "./Greeting"
+// import EditToDo from "./EditToDo"
 function Main (){
     return(
     <div className="Main">
-main
+            <Greeting/>
     </div>
 )}
 export default Main;

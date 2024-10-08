@@ -1,24 +1,31 @@
+.User{
+    display: flex;
+    position: relative;
+}
 .User .Box span{
     text-align: center;
-    top: 10px;
-    right: 5px;
-    padding: 20px;
     position: absolute;
+    font-size: 8px;
+    top:10px;
 }
 .User .UN  h2{
-    float: left;
-    font-size: 19px;
-    position: relative;
+    /* float: right; */
+    font-size: 15px;
+    position: absolute;
+    /* left: calc( (100% - 150px)/2); */
+    /* text-align:end; */
+    margin-left: 30px;
+    color: #3e0465;
+    top:10px;
 }
 .User .Box{
     display: block;
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
     background-color: aliceblue;
     border-radius: 50%;
-    margin-left: 28px;
-    margin-bottom: 5px;
     position: relative;
+    margin-left: 10px;
 }
 .info {
     display: flex;
@@ -29,24 +36,96 @@
 }
 
 input {
-
+    /* top:px; */
+    left: 60px;
+    position: absolute;
     width: 180px;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-left: 10px;
 }
-
 .btn {
-    padding: 5px 10px;
+    position: absolute;
+    padding: 5px 5px;
     border: none;
     border-radius: 5px;
     margin-left: 120px;
     font-size: 15px;
+    top:40px;
+    right:50px;
     background-color: #3e0465;
     color: rgb(238, 236, 236);
     cursor: pointer;
 }
+
+@media (max-width:1200px) {
+    input{
+        width:115px;
+
+    }
+    .btn{
+        padding: 2px 2px;
+        right:20px;
+
+    }
+    
+}
+@media(max-width:991px){
+    input{
+        width:115px;
+    }
+    .btn{
+        padding: 2px 2px;
+        right:20px;
+        right:10px; 
+    }
+}
+@media(max-width:441px){
+    input {
+        left: 0;
+        top:60px;
+        position: absolute;
+        width: 110px;
+        margin: 3px;
+        padding: 2px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .btn {
+        padding: 2px 2px;
+        font-size: 10px;
+        top:85px;
+        right:10px;        
+    }
+    .User .Box{
+        margin-left: 35px;
+    }
+}
+@media(max-width:600px){
+    input {
+        left: 0;
+        top:60px;
+        position: absolute;
+        width: 110px;
+        margin: 3px;
+        padding: 2px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .btn {
+        padding: 2px 2px;
+        font-size: 10px;
+        top:85px;
+        right:10px;        
+    }
+    .User .Box{
+        margin-left: 35px;
+    }
+}
+
+
 
 button:hover {
     background-color: #07a028; /* Darker blue on hover */
