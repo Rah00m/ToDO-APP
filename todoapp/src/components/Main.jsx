@@ -1,12 +1,10 @@
 // Main.jsx
 import "./Main.css";
 import Greeting from "./Greeting";
-import Weather from './Weather'; 
 function Main({ userName }) {
-  return (
+return (
     <div className="Main">
     <Greeting userName={userName} />
-    <Weather />
     </div>
 );
 }

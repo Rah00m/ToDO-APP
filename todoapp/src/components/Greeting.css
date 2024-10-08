@@ -11,6 +11,7 @@
     box-shadow: 2px 2px 2px #141313d9 ;
     position: relative;
     width: 850px;
+    display: flex;
     /* top:20px; */
 /* padding: 20px; */
 }
@@ -81,23 +82,95 @@ z-index: 2;
         top:40px;
         font-size:15px;
     }
+    .greetingBox{
+        width: 500px;
+    }
+    .greetingBox img{
+        position: absolute;
+        left: 280px;
+        top:-60px;
+        width: 250px;
+        height: 300px;
+        }
+        .Date p:first-child {
+            top: -50px;
+            margin: 0;
+            font-size: 30px; 
+            margin-left: 40px;
+        }
+        .Date p:nth-child(2) {
+            top:-10px;
+            font-size:15px;  
+            color: #555; 
+            margin-left: 50px;
+        }
+        .Date p:last-child {
+            font-size: 30px; 
+            top:30px;
+            color: rgba(129, 11, 164, 0.648);
+            margin-left: 50px;
+        }
 }
 @media(max-width:441px){
     .greetingBox .Date{
-        top:50px;
-        font-size:10px;
+        top:40px;
+        font-size:15px;
     }
+    .greetingBox{
+        width: 200px;
+    }
+    .greetingBox img{
+    display: none;
+        }
+        .Date p:first-child {
+            top: -50px;
+            margin: 0;
+            font-size: 15px; 
+            margin-left: 40px;
+        }
+        .Date p:nth-child(2) {
+            top:-20px;
+            font-size:10px;  
+            color: #555; 
+            margin-left: 50px;
+        }
+        .Date p:last-child {
+            font-size: 20px; 
+            top:5px;
+            margin-left: 50px;
+        }
 }
 @media(max-width:600px){
     .greetingBox .Date{
         top:40px;
         font-size:15px;
     }
-}
-@media(max-width:1200px){
-    .greetingBox .Date{
-        top:70px;
-        font-size:25px;
+    .greetingBox{
+        width: 300px;
     }
+    .greetingBox img{
+        position: absolute;
+        left: 160px;
+        top:60px;
+        width: 150px;
+        height: 150px;
+        }
+        .Date p:first-child {
+            top: -50px;
+            margin: 0;
+            font-size: 30px; 
+            margin-left: 40px;
+        }
+        .Date p:nth-child(2) {
+            top:-10px;
+            font-size:15px;  
+            color: #555; 
+            margin-left: 50px;
+        }
+        .Date p:last-child {
+            font-size: 30px; 
+            top:30px;
+            color: rgba(129, 11, 164, 0.648);
+            margin-left: 50px;
+        }
 }
-

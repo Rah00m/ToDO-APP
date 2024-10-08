@@ -1,6 +1,7 @@
 import "./Greeting.css";
 import React, { useState, useEffect } from 'react';
 import greetBox from "../IMG/greetBox.png";
+import WeatherData from './WeatherData'; 
 
 function Greeting({ userName }) {
     const [dateState, setDateState] = useState(new Date());
@@ -55,6 +56,7 @@ function Greeting({ userName }) {
             </p>
                 </div>
             </div>
+            <WeatherData />
         </div>
     );
 }
