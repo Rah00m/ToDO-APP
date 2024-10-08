@@ -39,13 +39,13 @@ function Greeting({ userName }) {
                 <div className="Date">
                     <p>{greeting}</p> {/* Display the greeting message */}
                     <p>{message}</p> {/* Display the additional message */}
-                    <p>
+                    {/* <p>
                         {dateState.toLocaleDateString('en-GB', {
                             day: 'numeric',
                             month: 'short',
                             year: 'numeric',
                         })}
-                    </p>
+                    </p> */}
                     <p>
             {dateState.toLocaleString('en-US', {
                 hour: 'numeric',

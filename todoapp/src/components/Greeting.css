@@ -2,13 +2,16 @@
     font-family: "Roboto", sans-serif;
 }
 .greetingBox{
-    height: 30%;
-    margin: 15px;
+    /* height: 30%; */
+    height: 180px;
+    margin: 30px;
     background-color: aliceblue;
     border-radius: 30px;
     margin-bottom: 0;
     box-shadow: 2px 2px 2px #141313d9 ;
     position: relative;
+    width: 850px;
+    /* top:20px; */
 /* padding: 20px; */
 }
 .greetingBox .overlay{
@@ -22,8 +25,8 @@
 .greetingBox img{
 margin-left: auto;
 position: absolute;
-right: 10px;
-top:-90px;
+left: 450px;
+top:-100px;
 width: 450px;
 height: 350px;
 z-index: 2;
@@ -62,19 +65,16 @@ z-index: 2;
 .Date  p:nth-child(3) {
     position: absolute;
     font-size: 25px; 
-    top:100px;
-    font-weight: bold;
+    top:90px;
+    /* font-weight: bold; */
     color: rgba(129, 11, 164, 0.648);
-    margin-left: 20px;
 }
 .Date p:last-child {
     position: absolute;
-    font-size: 25px; 
-    top:130px;
-    font-weight: bold;
+    font-size: 40px; 
+    top:100px;
     color: rgba(129, 11, 164, 0.648);
-    margin-left: 20px;
-
+    margin-left: 50px;
 }
 @media(max-width:991px){
     .greetingBox .Date{
