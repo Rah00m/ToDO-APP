@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './User.css'
-function User() {
+function User({onNameChange }) {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [name ,setname]=useState("");
     const [image, setImage] = useState(null); 
@@ -8,14 +8,16 @@ function User() {
     useEffect(()=>{
         const savedName = localStorage.getItem("userName");
         if (savedName) {
-            setName(savedName);
+            setname(savedName);
             setIsSubmitted(true); // Automatically greet the user if a name exists
+            onNameChange (savedName);
         }
-    },[]);
+    },[onNameChange]);
     const handleSubmit=()=>{
         if(name!==""){
             localStorage.setItem("username",name);
             setIsSubmitted(true);
+            onNameChange (name);
         }
     };
 // //////////////////////////////////////////////////

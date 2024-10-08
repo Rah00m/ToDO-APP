@@ -2,10 +2,10 @@
 import './Main.css'
 import Greeting from "./Greeting"
 // import EditToDo from "./EditToDo"
-function Main (){
+function Main ({userName}){
     return(
     <div className="Main">
-            <Greeting/>
+            <Greeting userName={userName}/>
     </div>
 )}
 export default Main;

@@ -1,3 +1,6 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
 .greetingBox{
     height: 30%;
     margin: 15px;
@@ -6,6 +9,7 @@
     margin-bottom: 0;
     box-shadow: 2px 2px 2px #141313d9 ;
     position: relative;
+/* padding: 20px; */
 }
 .greetingBox .overlay{
     background-color: rgba(0, 0, 0, 0.175);
@@ -15,15 +19,62 @@
     position: absolute;
     border-radius: 30px;
 }
+.greetingBox img{
+margin-left: auto;
+position: absolute;
+right: 10px;
+top:-90px;
+width: 450px;
+height: 350px;
+z-index: 2;
+}
 
 .greetingBox .Date{
-    position: absolute;
+    position: relative;
     color: #3e0465;
-    font-size: large;
-    font-weight: bold;
-    top: 125px;
-    left:50px;
+    /* font-size: large; */
+    /* font-weight: bold; */
+    /* top: 125px;
+    left:50px; */
     z-index: 2;
+    /* margin-right: auto; */
+}
+
+/* Style for the greeting message */
+.Date p:first-child {
+    top: 10px;
+    position: absolute;
+    font-size: 40px; 
+    font-weight: bold; 
+    color: #3e0465;
+    margin-left: 20px;
+}
+
+/* Style for the additional message */
+.Date p:nth-child(2) {
+    position: absolute;
+    top:60px;
+    font-size: 20px;  
+    color: #555; 
+    margin-left: 50px;
+}
+
+.Date  p:nth-child(3) {
+    position: absolute;
+    font-size: 25px; 
+    top:100px;
+    font-weight: bold;
+    color: rgba(129, 11, 164, 0.648);
+    margin-left: 20px;
+}
+.Date p:last-child {
+    position: absolute;
+    font-size: 25px; 
+    top:130px;
+    font-weight: bold;
+    color: rgba(129, 11, 164, 0.648);
+    margin-left: 20px;
+
 }
 @media(max-width:991px){
     .greetingBox .Date{
