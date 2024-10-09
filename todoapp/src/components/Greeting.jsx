@@ -35,7 +35,6 @@ function Greeting({ userName }) {
     return (
         <div className="greetingBox">
                         <img src={greetBox} alt="greetBox photo" /> 
-
             <div className="overlay">
                 <div className="Date">
                     <p>{greeting}</p> {/* Display the greeting message */}

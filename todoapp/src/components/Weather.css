@@ -17,3 +17,45 @@ left: 900px;
     position: absolute;
     border-radius: 30px;
 }
+
+.Data {
+    text-align: right; 
+    position: absolute;
+    right: 20px;
+    margin-top: 15px;
+}
+
+.Data {
+    position: relative; 
+    padding: 20px; }
+
+.Data p {
+    margin: 5px 0; 
+    font-size: 20px; 
+    color: rgba(129, 11, 164, 0.648);
+}
+
+.Data p:first-child {
+    font-size: 50px; /* Larger font size for temperature */
+    font-weight: bold;
+    margin: 0; /* Remove margin for absolute positioning */
+    position: absolute;
+    top: 15px;
+    left: 85px; /* Adjust left position to align with icon */
+}
+
+.Data p:last-child {
+    font-size: 1em; 
+    color: #555; 
+    position: absolute;
+    top: 110px; /* Adjusted to prevent overlap */
+    left: 85px; /* Align with the temperature */
+}
+
+.Data img {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    left: 50px; /* Adjusted left position for better layout */
+    top: 10px; /* Keep the icon at the top */
+}

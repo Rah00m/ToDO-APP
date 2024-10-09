@@ -1,14 +1,27 @@
 import React,{useEffect ,useState} from 'react';
 import axios from 'axios'; 
 import './Weather.css'
+import weathericon from "../IMG/weather.png";
+
+
 function WeatherData() {
-    const [weather ,setWeather]=useState("");
+    const [weather ,setWeather]=useState(null);
     const [loading ,setLoading]=useState("");
+    const [dateState, setDateState] = useState(new Date());
+    useEffect(() => {
+        // Update the dateState every 30 seconds
+        const intervalId = setInterval(() => setDateState(new Date()), 30000);
+        return () => clearInterval(intervalId); // Cleanup on unmount
+    }, []);
     const fetchWeather =async ()=>{
         try {
-            const apiKey =  process.env.REACT_APP_API_KEY;
+            
+            const apiKey = "5096cb5a2200c8de68c177bee49770d3"; 
+            // const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
             const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=cairo&appid=${apiKey}&units=metric`);
+            console.log("API Key:", apiKey); // تأكد من أن المفتاح يظهر في وحدة التحكم
             setWeather(response.data);
+            console.log("Weather Object:", response.data);
             setLoading(false);
         } catch (error) {
             console.error("Error fetching weather data:", error);
@@ -24,7 +37,25 @@ function WeatherData() {
                 <p>Loading Weather....</p>
             ):
             weather?
-            (  <p>Current temperature in {weather.name}: {weather.main.temp}°C</p>):
+            (<div className='Data'>
+                
+                    {/* Weather Icon */}
+                    {weather.weather && weather.weather.length > 0 && (
+                            <img
+                            src={weathericon}
+                            alt={"waether icon"} // Descriptive alt text
+                            className="weather-icon"
+                        />
+                            )}
+                <p>{weather.main.temp}°C</p>
+                <p>{weather.weather[0].description}</p>
+            <p> {weather.name +' '}
+            {dateState.toLocaleDateString('en-GB', {
+                            day: 'numeric',
+                            month: 'short',
+                            year: 'numeric',
+                        })}
+                        </p></div>):
             (                <p>Error fetching weather data.</p>
             )
         }
