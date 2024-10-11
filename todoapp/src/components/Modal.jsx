@@ -14,7 +14,9 @@ return (
 showModal&& 
 
 <div className="Modal" ref={modalRef} onClick={closeModal}>
-    <div className="overlay">
+    <div className="container">
+        hello
+        <button onClick={()=>setShowModal(false)}>X</button>
         {children}
     </div>
 </div> 
