@@ -45,7 +45,7 @@ z-index: 2;
 }
 
 /* Style for the greeting message */
-.Date p:first-child {
+.greetingBox .Date p:first-child {
     top: 10px;
     position: absolute;
     font-size: 40px; 
@@ -55,7 +55,7 @@ z-index: 2;
 }
 
 /* Style for the additional message */
-.Date p:nth-child(2) {
+.greetingBox  .Date p:nth-child(2) {
     position: absolute;
     top:60px;
     font-size: 20px;  
@@ -63,14 +63,14 @@ z-index: 2;
     margin-left: 50px;
 }
 
-.Date  p:nth-child(3) {
+.greetingBox  .Date  p:nth-child(3) {
     position: absolute;
     font-size: 25px; 
     top:90px;
     /* font-weight: bold; */
     color: rgba(129, 11, 164, 0.648);
 }
-.Date p:last-child {
+.greetingBox  .Date p:last-child {
     position: absolute;
     font-size: 40px; 
     top:100px;
@@ -92,54 +92,26 @@ z-index: 2;
         width: 250px;
         height: 300px;
         }
-        .Date p:first-child {
+        .greetingBox  .Date p:first-child {
             top: -50px;
             margin: 0;
             font-size: 30px; 
             margin-left: 40px;
         }
-        .Date p:nth-child(2) {
+        .greetingBox  .Date p:nth-child(2) {
             top:-10px;
             font-size:15px;  
             color: #555; 
             margin-left: 50px;
         }
-        .Date p:last-child {
+        .greetingBox  .Date p:last-child {
             font-size: 30px; 
             top:30px;
             color: rgba(129, 11, 164, 0.648);
             margin-left: 50px;
         }
 }
-@media(max-width:441px){
-    .greetingBox .Date{
-        top:40px;
-        font-size:15px;
-    }
-    .greetingBox{
-        width: 200px;
-    }
-    .greetingBox img{
-    display: none;
-        }
-        .Date p:first-child {
-            top: -50px;
-            margin: 0;
-            font-size: 15px; 
-            margin-left: 40px;
-        }
-        .Date p:nth-child(2) {
-            top:-20px;
-            font-size:10px;  
-            color: #555; 
-            margin-left: 50px;
-        }
-        .Date p:last-child {
-            font-size: 20px; 
-            top:5px;
-            margin-left: 50px;
-        }
-}
+
 @media(max-width:600px){
     .greetingBox .Date{
         top:40px;
@@ -155,22 +127,53 @@ z-index: 2;
         width: 150px;
         height: 150px;
         }
-        .Date p:first-child {
-            top: -50px;
+        .greetingBox  .Date p:first-child {
+            top: -35px;
             margin: 0;
             font-size: 30px; 
             margin-left: 40px;
         }
-        .Date p:nth-child(2) {
-            top:-10px;
+        .greetingBox  .Date p:nth-child(2) {
+            top:5px;
             font-size:15px;  
             color: #555; 
             margin-left: 50px;
         }
-        .Date p:last-child {
+        .greetingBox  .Date p:last-child {
             font-size: 30px; 
             top:30px;
             color: rgba(129, 11, 164, 0.648);
+            margin-left: 50px;
+        }
+}
+@media(max-width:441px){
+    .greetingBox {
+        width: 200px;
+        height: 110px;
+    }
+    .greetingBox .Date{
+        top:40px;
+        font-size:5px;
+    }
+    
+    .greetingBox img{
+    display: none;
+        }
+        .greetingBox .Date p:first-child {
+            top: -30px;
+            margin: 0;
+            font-size: 20px; 
+            margin-left: 30px;
+        }
+        .greetingBox .Date p:nth-child(2) {
+            top:1px;
+            font-size:10px;  
+            color: #555; 
+            margin-left: 50px;
+        }
+        .greetingBox .Date p:last-child {
+            font-size: 15px; 
+            top:30px;
             margin-left: 50px;
         }
 }

@@ -128,5 +128,6 @@ input {
 
 
 button:hover {
-    background-color: #07a028; /* Darker blue on hover */
+    border: none;
+    background-color: #7309c9; /* Darker blue on hover */
 }

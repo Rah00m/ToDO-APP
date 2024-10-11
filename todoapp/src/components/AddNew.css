@@ -1,0 +1,31 @@
+.add-new{
+    position: relative;
+}
+
+.add-new h3{
+    position: absolute;
+top:30px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+color: rgba(59, 7, 108, 0.913);
+margin-left: 50px;
+}
+
+.add-new .taskicon{
+    position: absolute;
+    top: 20px;
+    width :30px;
+}
+
+.add-new .btn{
+    position: absolute;
+    top:40px;
+    right: 15px;
+    margin: 0px;
+    width:20px;
+    border: none;
+}
+.add-new .btn:hover {
+    border: none;
+    background-color: #7309c9;
+}

@@ -1,7 +1,7 @@
 import User from "./User";
 import './Sidebar.css';
 import logo from "../IMG/logo.png";
-// import AddNew from "./AddNew";
+import AddNew from "./AddNew";
 // import Calendar from "./Calendar";
 
 function Sidebar({onNameChange}) {
@@ -14,7 +14,7 @@ function Sidebar({onNameChange}) {
             <User onNameChange={onNameChange} />
             {/* <hr style={{ marginTop :"20px", width:"180px" ,marginLeft:"10px"}}></hr> */}
             
-            {/* <AddNew /> */}
+            <AddNew />
             {/* <Calendar /> */}
         </div>
     );

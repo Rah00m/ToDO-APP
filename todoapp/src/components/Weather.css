@@ -1,6 +1,5 @@
 .weatherBox{
     height: 180px;
-    /* margin: 100px; */
     background-color: aliceblue;
     border-radius: 30px;
     margin-bottom: 0;
@@ -36,26 +35,111 @@ left: 900px;
 }
 
 .Data p:first-child {
-    font-size: 50px; /* Larger font size for temperature */
+    font-size: 50px; 
     font-weight: bold;
-    margin: 0; /* Remove margin for absolute positioning */
+    margin: 0; 
     position: absolute;
     top: 15px;
-    left: 85px; /* Adjust left position to align with icon */
+    left: 85px;
 }
 
 .Data p:last-child {
     font-size: 1em; 
     color: #555; 
     position: absolute;
-    top: 110px; /* Adjusted to prevent overlap */
-    left: 85px; /* Align with the temperature */
+    top: 110px; 
+    left: 85px; 
 }
 
 .Data img {
     position: absolute;
     width: 80px;
     height: auto;
-    left: 50px; /* Adjusted left position for better layout */
-    top: 10px; /* Keep the icon at the top */
+    left: 50px; 
+    top: 10px;
+right:120px; }
+@media(max-width:1200px){
+}
+@media(max-width:991px){
+    .weatherBox{
+        height: 180px;
+        width: 150px;
+        left: 500px;
+    margin-left: 10px;
+    }
+    
+    .Data {
+        text-align: right; 
+        position: absolute;
+        right: 15px;
+        margin-top: 15px;
+    }
+    
+    .Data {
+        position: relative; 
+        padding: 5px; }
+    
+    .Data p {
+        /* margin: 7px 0;  */
+        font-size: 17px; 
+        color: rgba(129, 11, 164, 0.648);
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .Data p:nth-child(3) {
+        margin-right: 5px;
+        font-size: 25px;
+    }
+    .Data p:last-child {
+        font-size: 0.75em; 
+        top:100px;
+    }
+    
+    .Data img {
+        width: 50px;
+        left: 30px; 
+        top: 10px; }
+}
+@media(max-width:600px){
+    .weatherBox{
+        height: 180px;
+        width: 122px;
+        left: 300px;
+    margin-left: 10px;
+    }
+    
+    .Data {
+        text-align: right; 
+        right: 5px;
+        margin-top: 5px;
+    }
+    
+    .Data p {
+        /* margin: 7px 0;  */
+        font-size: 17px; 
+        color: rgba(129, 11, 164, 0.648);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .Data p:nth-child(3) {
+        margin-right: 5px;
+        font-size: 25px;
+    }
+    .Data p:last-child {
+        font-size: 0.65em; 
+        margin-right: 5px;
+        top:100px;
+    }
+    
+    .Data img {
+        width: 40px;
+        left: 10px; 
+        top: 15px; 
+
+}
+}
+@media(max-width:441px){
+    .weatherBox{
+        display: none;
+    }
 }
